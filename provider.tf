@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "kubernetes" {
-  config_path = "~/.kube/config"  # Asegúrate de que el archivo kubeconfig está en esta ruta
+  config_path = "~/.kube/config"  
 }
