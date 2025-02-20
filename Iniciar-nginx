@@ -1,0 +1,35 @@
+Procedimiento
+----------------------
+
+1) ingresar a la carpeta donde se encuentran los archivos .tf ( en mi caso)
+cd home/upm/Desktop/TFM/nginx
+
+2) Abrir una consola y  ejecutar:
+
+a) terraform init
+b) terraform plan
+c) terraform apply
+
+3) Para verificar si esta levantado el servidor nginx ( ejecutamos los siguientes comandos)
+
+kubectl get pods
+kubectl get services nginx
+
+4) necesitamos la IP  (ejecutamos el comando)
+
+hostname -I
+o
+ip a
+
+5) vamos a un navegador y ejecutamos para mi caso:
+
+http://10.0.2.15:31025/
+
+o 
+
+curl -v http://10.0.2.15:31025 ( en la consola o VSC)
+
+
+
+
+
